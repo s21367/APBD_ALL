@@ -5933,19 +5933,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\szyma\\.nuget\\packages\\": {}
+    "C:\\Users\\makyo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\szyma\\Desktop\\APBD\\Zadanie 2\\zadanie_2\\LegacyAppTests\\LegacyAppTests.csproj",
+      "projectUniqueName": "K:\\APBD_ALL\\Zadanie 2\\zadanie_2\\LegacyAppTests\\LegacyAppTests.csproj",
       "projectName": "LegacyAppTests",
-      "projectPath": "C:\\Users\\szyma\\Desktop\\APBD\\Zadanie 2\\zadanie_2\\LegacyAppTests\\LegacyAppTests.csproj",
-      "packagesPath": "C:\\Users\\szyma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\szyma\\Desktop\\APBD\\Zadanie 2\\zadanie_2\\LegacyAppTests\\obj\\",
+      "projectPath": "K:\\APBD_ALL\\Zadanie 2\\zadanie_2\\LegacyAppTests\\LegacyAppTests.csproj",
+      "packagesPath": "C:\\Users\\makyo\\.nuget\\packages\\",
+      "outputPath": "K:\\APBD_ALL\\Zadanie 2\\zadanie_2\\LegacyAppTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\szyma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\makyo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5959,8 +5959,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\szyma\\Desktop\\APBD\\Zadanie 2\\zadanie_2\\LegacyApp\\LegacyApp.csproj": {
-              "projectPath": "C:\\Users\\szyma\\Desktop\\APBD\\Zadanie 2\\zadanie_2\\LegacyApp\\LegacyApp.csproj"
+            "K:\\APBD_ALL\\Zadanie 2\\zadanie_2\\LegacyApp\\LegacyApp.csproj": {
+              "projectPath": "K:\\APBD_ALL\\Zadanie 2\\zadanie_2\\LegacyApp\\LegacyApp.csproj"
             }
           }
         }
@@ -6006,26 +6006,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

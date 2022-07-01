@@ -1,8 +1,6 @@
 ﻿using efDataBase.Models;
 using efDataBase.Models.DTO;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -30,8 +28,9 @@ namespace efDataBase.Services
                     Patient = new SomeSortOfPatient { FirstName = e.Patient.FirstName, LastName = e.Patient.LastName, Birthdate = e.Patient.Birthdate },
                     Doctor = new SomeSortOfDoctor { FirstName = e.Doctor.FirstName, LastName = e.Doctor.LastName, Email = e.Doctor.Email },
                     Medicaments = e.Prescription_Medicaments.Select(e => new SomeSortOfMedicament { Name = e.Medicament.Name }).ToList()
-                }).FirstOrDefaultAsync(); 
-                
+                })
+                .FirstOrDefaultAsync();
+
         }
     }
 }

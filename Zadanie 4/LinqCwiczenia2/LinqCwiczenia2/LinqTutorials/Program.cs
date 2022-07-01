@@ -6,9 +6,9 @@ namespace LinqTutorials
     {
         public static void Main(string[] args)
         {
-            var res = LinqTasks.Task1();
+            System.Collections.Generic.IEnumerable<Models.Emp> res = LinqTasks.Task12();
 
-            foreach (var item in res)
+            foreach (Models.Emp item in res)
             {
                 Console.WriteLine(item);
             }

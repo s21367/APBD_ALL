@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json.Linq;
 
 namespace mp
 {
@@ -18,7 +13,8 @@ namespace mp
             this.numberOfStudents = 1;
         }
 
-        public JObject toJson() { 
+        public JObject toJson()
+        {
             return new JObject(
                 new JProperty("name", this.name),
                 new JProperty("numberOfStudents", this.numberOfStudents)

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\szyma\\Desktop\\APBD\\Zadanie 4\\LinqCwiczenia2\\LinqCwiczenia2\\LinqTutorials\\LinqTutorials.csproj": {}
+    "K:\\APBD_ALL\\Zadanie 4\\LinqCwiczenia2\\LinqCwiczenia2\\LinqTutorials\\LinqTutorials.csproj": {}
   },
   "projects": {
-    "C:\\Users\\szyma\\Desktop\\APBD\\Zadanie 4\\LinqCwiczenia2\\LinqCwiczenia2\\LinqTutorials\\LinqTutorials.csproj": {
+    "K:\\APBD_ALL\\Zadanie 4\\LinqCwiczenia2\\LinqCwiczenia2\\LinqTutorials\\LinqTutorials.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\szyma\\Desktop\\APBD\\Zadanie 4\\LinqCwiczenia2\\LinqCwiczenia2\\LinqTutorials\\LinqTutorials.csproj",
+        "projectUniqueName": "K:\\APBD_ALL\\Zadanie 4\\LinqCwiczenia2\\LinqCwiczenia2\\LinqTutorials\\LinqTutorials.csproj",
         "projectName": "LinqTutorials",
-        "projectPath": "C:\\Users\\szyma\\Desktop\\APBD\\Zadanie 4\\LinqCwiczenia2\\LinqCwiczenia2\\LinqTutorials\\LinqTutorials.csproj",
-        "packagesPath": "C:\\Users\\szyma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\szyma\\Desktop\\APBD\\Zadanie 4\\LinqCwiczenia2\\LinqCwiczenia2\\LinqTutorials\\obj\\",
+        "projectPath": "K:\\APBD_ALL\\Zadanie 4\\LinqCwiczenia2\\LinqCwiczenia2\\LinqTutorials\\LinqTutorials.csproj",
+        "packagesPath": "C:\\Users\\makyo\\.nuget\\packages\\",
+        "outputPath": "K:\\APBD_ALL\\Zadanie 4\\LinqCwiczenia2\\LinqCwiczenia2\\LinqTutorials\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\szyma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\makyo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,30 +49,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.17, 5.0.17]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,38 +1,52 @@
-﻿using System;
-using System.Net.Http;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
 
 namespace Crawler
 {
-    public class Program
+    public static class Program
     {
         public static async Task Main(string[] args)
         {
-            if (args.Length == 0) throw new ArgumentNullException();
-
-            string websiteUrl = args[0];
-            if(!Uri.IsWellFormedUriString(websiteUrl, UriKind.Absolute)) throw new ArgumentException();
-            HttpClient httpClient = new HttpClient();
-            HttpResponseMessage response;
-            try { response = await httpClient.GetAsync(websiteUrl); }
-            catch (Exception) { Console.WriteLine("Błąd w czasie pobierania strony"); return ; }
-            finally { httpClient.Dispose(); }
-
-            string content = await response.Content.ReadAsStringAsync();
-			
-            Regex regex = new Regex(@"(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|""(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*"")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])");
-            MatchCollection matchCollection = regex.Matches(content);
-
-            HashSet<string> matches = new HashSet<string>();
-            foreach (var match in matchCollection)
+            if (args.Length == 0)
             {
-                matches.Add(match.ToString());
+                throw new ArgumentNullException();
             }
-            if(matches.Count == 0) Console.WriteLine("Nie znaleziono adresów email");
-            foreach (var match in matches)
+
+            var url = args[0];
+            
+            if (!Uri.IsWellFormedUriString(url, UriKind.Absolute))
             {
-                Console.WriteLine(match);
+                throw new ArgumentException();
+            }
+
+            try
+            {
+                using var client = new HttpClient();
+
+                var response = await client.GetAsync(url);
+                
+                var content = await response.Content.ReadAsStringAsync();
+                
+                var regex = new Regex(@"[\w-\.]+@([\w-]+\.)+[\w-]{2,4}");
+
+                var matches = regex
+                    .Matches(content)
+                    .Select(m => m.Groups[0].Value)
+                    .ToList();
+                
+                if (matches.Count == 0)
+                {
+                    Console.WriteLine("Nie znaleziono adresów email");
+                }
+
+                foreach (var match in matches)
+                {
+                    Console.WriteLine(match);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine("Błąd w czasie pobierania strony");
             }
         }
     }

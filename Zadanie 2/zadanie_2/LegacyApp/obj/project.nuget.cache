@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jm0bL6pPLt95jpaXwOkGnvpGtQdXAKqemWalMJPdO8+tszFAzSXuwl2eSwuJ0xtu2uMgQdllhMSpxwOr7Azg8g==",
+  "dgSpecHash": "Ooubk7qPW06GaTClhI2dAhMyOeCEE2FmZDJc8rSvri6KWq6/rfRFnc4E0JaKAIf3mopyqYvsJm7BoTjhSNCcKg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\szyma\\Desktop\\APBD\\Zadanie 2\\zadanie_2\\LegacyApp\\LegacyApp.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\szyma\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\szyma\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\szyma\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
-  ],
+  "projectFilePath": "K:\\APBD_ALL\\Zadanie 2\\zadanie_2\\LegacyApp\\LegacyApp.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

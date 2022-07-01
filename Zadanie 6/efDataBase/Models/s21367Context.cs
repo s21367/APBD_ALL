@@ -1,30 +1,28 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace efDataBase.Models
 {
     public class s21367Context : DbContext
     {
-
-        protected s21367Context()
-        {
-
-        }
-            
-
-        public s21367Context(DbContextOptions options) : base(options)
-        {
-
-        }
-
-        public DbSet<Patient> Patients { get; set; }
         public DbSet<Doctor> Doctors { get; set; }
-        public DbSet<Prescription> Prescriptions { get; set; }
-        public DbSet<Prescription_Medicament> prescription_Medicaments { get; set; }
+        
+        public DbSet<Patient> Patients { get; set; }
+
         public DbSet<Medicament> Medicaments { get; set; }
+
+        public DbSet<Prescription> Prescriptions { get; set; }
+
+        public DbSet<Prescription_Medicament> Prescription_Medicaments { get; set; }
+
+        public s21367Context() { }
+
+        public s21367Context(DbContextOptions options) : base(options) { }
+
+        /*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Database=efDatabase;Integrated Security=True;");
+        }*/
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -33,34 +31,51 @@ namespace efDataBase.Models
             modelBuilder.Entity<Patient>(p =>
             {
                 p.HasKey(e => e.IdPatient);
-                p.Property(e => e.FirstName).IsRequired().HasMaxLength(100);
-                p.Property(e => e.LastName).IsRequired().HasMaxLength(100);
-                p.Property(e => e.Birthdate).IsRequired();
+
+                p.Property(e => e.FirstName)
+                    .IsRequired()
+                    .HasMaxLength(100);
+
+                p.Property(e => e.LastName)
+                    .IsRequired()
+                    .HasMaxLength(100);
+
+                p.Property(e => e.Birthdate)
+                    .IsRequired();
 
                 p.HasData(
                     new Patient
                     {
-                       IdPatient = 1, 
-                       FirstName = "Tomasz", 
-                       LastName = "Koło", 
-                       Birthdate = DateTime.Parse("1995-04-18")
+                        IdPatient = 1,
+                        FirstName = "Tomasz",
+                        LastName = "Koło",
+                        Birthdate = DateTime.Parse("1995-04-18")
                     },
                     new Patient
                     {
-                        IdPatient = 1,
+                        IdPatient = 2,
                         FirstName = "Jan",
                         LastName = "Dyzma",
                         Birthdate = DateTime.Parse("1999-07-12")
                     }
-                    );
+                 );
             });
 
             modelBuilder.Entity<Doctor>(d =>
             {
                 d.HasKey(e => e.IdDoctor);
-                d.Property(e => e.FirstName).IsRequired().HasMaxLength(100);
-                d.Property(e => e.LastName).IsRequired().HasMaxLength(100);
-                d.Property(e => e.Email).IsRequired().HasMaxLength(100);
+
+                d.Property(e => e.FirstName)
+                    .IsRequired()
+                    .HasMaxLength(100);
+
+                d.Property(e => e.LastName)
+                    .IsRequired()
+                    .HasMaxLength(100);
+
+                d.Property(e => e.Email)
+                    .IsRequired()
+                    .HasMaxLength(100);
 
                 d.HasData(
                     new Doctor
@@ -77,17 +92,26 @@ namespace efDataBase.Models
                         LastName = "Kowalski",
                         Email = "d.kowalski@wp.pl"
                     }
-                    );
+                );
             });
 
             modelBuilder.Entity<Prescription>(p =>
             {
                 p.HasKey(e => e.IdPrescription);
-                p.Property(e => e.Date).IsRequired();
-                p.Property(e => e.DueDate).IsRequired();
 
-                p.HasOne(e => e.Patient).WithMany(e => e.Prescriptions).HasForeignKey(e => e.IdPatient);
-                p.HasOne(e => e.Doctor).WithMany(e => e.Prescriptions).HasForeignKey(e => e.IdDoctor);
+                p.Property(e => e.Date)
+                    .IsRequired();
+
+                p.Property(e => e.DueDate)
+                    .IsRequired();
+
+                p.HasOne(e => e.Patient)
+                    .WithMany(e => e.Prescriptions)
+                    .HasForeignKey(e => e.IdPatient);
+
+                p.HasOne(e => e.Doctor)
+                    .WithMany(e => e.Prescriptions)
+                    .HasForeignKey(e => e.IdDoctor);
 
                 p.HasData(
                     new Prescription
@@ -106,15 +130,24 @@ namespace efDataBase.Models
                         IdPatient = 2,
                         IdDoctor = 1
                     }
-                    );
+                );
             });
 
             modelBuilder.Entity<Medicament>(m =>
             {
                 m.HasKey(e => e.IdMedicament);
-                m.Property(e => e.Name).IsRequired().HasMaxLength(100);
-                m.Property(e => e.Description).IsRequired().HasMaxLength(100);
-                m.Property(e => e.Type).IsRequired().HasMaxLength(100);
+
+                m.Property(e => e.Name)
+                    .IsRequired()
+                    .HasMaxLength(100);
+
+                m.Property(e => e.Description)
+                    .IsRequired()
+                    .HasMaxLength(100);
+
+                m.Property(e => e.Type)
+                    .IsRequired()
+                    .HasMaxLength(100);
 
                 m.HasData(
                     new Medicament
@@ -131,17 +164,26 @@ namespace efDataBase.Models
                         Description = "Wymagana zgoda kierownika",
                         Type = "tabletki"
                     }
-                    );
+                );
             });
 
             modelBuilder.Entity<Prescription_Medicament>(p =>
-            {
-                p.HasKey(e => e.IdPrescription);
-                p.HasOne(e => e.Prescription).WithMany(e => e.Prescription_Medicaments).HasForeignKey(e => e.IdPrescription);
-                p.HasKey(e => e.IdMedicament);
-                p.HasOne(e => e.Medicament).WithMany(e => e.Prescription_Medicaments).HasForeignKey(e => e.IdMedicament);
+            {               
+                p.HasKey(e => new { e.IdMedicament, e.IdPrescription });
+                
+                p.HasOne(e => e.Prescription)
+                    .WithMany(e => e.Prescription_Medicaments)
+                    .HasForeignKey(e => e.IdPrescription);
+
+                p.HasOne(e => e.Medicament)
+                    .WithMany(e => e.Prescription_Medicaments)
+                    .HasForeignKey(e => e.IdMedicament);
+
                 p.Property(e => e.Dose);
-                p.Property(e => e.Details).IsRequired().HasMaxLength(100);
+
+                p.Property(e => e.Details)
+                    .IsRequired()
+                    .HasMaxLength(100);
 
                 p.HasData(
                     new Prescription_Medicament
@@ -165,10 +207,8 @@ namespace efDataBase.Models
                         Dose = 1,
                         Details = "Na dobry start"
                     }
-
-                    );
+                );
             });
         }
-
     }
 }

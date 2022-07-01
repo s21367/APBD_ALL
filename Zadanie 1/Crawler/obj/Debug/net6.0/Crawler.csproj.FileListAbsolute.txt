@@ -1,0 +1,15 @@
+K:\APBD_ALL\Zadanie 1\Crawler\bin\Debug\net6.0\Crawler.exe
+K:\APBD_ALL\Zadanie 1\Crawler\bin\Debug\net6.0\Crawler.deps.json
+K:\APBD_ALL\Zadanie 1\Crawler\bin\Debug\net6.0\Crawler.runtimeconfig.json
+K:\APBD_ALL\Zadanie 1\Crawler\bin\Debug\net6.0\Crawler.dll
+K:\APBD_ALL\Zadanie 1\Crawler\bin\Debug\net6.0\Crawler.pdb
+K:\APBD_ALL\Zadanie 1\Crawler\obj\Debug\net6.0\Crawler.csproj.AssemblyReference.cache
+K:\APBD_ALL\Zadanie 1\Crawler\obj\Debug\net6.0\Crawler.GeneratedMSBuildEditorConfig.editorconfig
+K:\APBD_ALL\Zadanie 1\Crawler\obj\Debug\net6.0\Crawler.AssemblyInfoInputs.cache
+K:\APBD_ALL\Zadanie 1\Crawler\obj\Debug\net6.0\Crawler.AssemblyInfo.cs
+K:\APBD_ALL\Zadanie 1\Crawler\obj\Debug\net6.0\Crawler.csproj.CoreCompileInputs.cache
+K:\APBD_ALL\Zadanie 1\Crawler\obj\Debug\net6.0\Crawler.dll
+K:\APBD_ALL\Zadanie 1\Crawler\obj\Debug\net6.0\refint\Crawler.dll
+K:\APBD_ALL\Zadanie 1\Crawler\obj\Debug\net6.0\Crawler.pdb
+K:\APBD_ALL\Zadanie 1\Crawler\obj\Debug\net6.0\Crawler.genruntimeconfig.cache
+K:\APBD_ALL\Zadanie 1\Crawler\obj\Debug\net6.0\ref\Crawler.dll

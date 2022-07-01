@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using efDataBase.Models;
+﻿using efDataBase.Models.DTO;
 using efDataBase.Services;
-using efDataBase.Models.DTO;
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace efDataBase.Controllers
 {
@@ -15,10 +11,9 @@ namespace efDataBase.Controllers
     [ApiController]
     public class DoctorsController : Controller
     {
-        
+
         private readonly IDbService _dbService;
 
-       
         public DoctorsController(IDbService dbService)
         {
             _dbService = dbService;
@@ -27,7 +22,7 @@ namespace efDataBase.Controllers
         [HttpGet]
         public async Task<IActionResult> GetDoctors()
         {
-            var doctors = await _dbService.GetDoctors();
+            IEnumerable<SomeSortOfDoctor> doctors = await _dbService.GetDoctors();
             return Ok(doctors);
         }
 
@@ -37,9 +32,10 @@ namespace efDataBase.Controllers
         {
             try
             {
-                var result = await _dbService.DeleteDoctor(idDoctor);
+                string result = await _dbService.DeleteDoctor(idDoctor);
                 return Ok(result);
-            }catch(Exception e)
+            }
+            catch (Exception e)
             {
                 return NotFound(e.Message);
             }
@@ -51,7 +47,7 @@ namespace efDataBase.Controllers
         {
             try
             {
-                var result = await _dbService.EditDoctor(doctor, idDoctor);
+                string result = await _dbService.EditDoctor(doctor, idDoctor);
                 return Ok(result);
             }
             catch (Exception e)
@@ -65,7 +61,7 @@ namespace efDataBase.Controllers
         {
             try
             {
-                var result = await _dbService.AddDoctor(doctor);
+                string result = await _dbService.AddDoctor(doctor);
                 return Ok(result);
             }
             catch (Exception e)

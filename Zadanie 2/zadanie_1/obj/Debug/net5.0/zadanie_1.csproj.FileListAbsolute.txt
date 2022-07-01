@@ -34,3 +34,21 @@ C:\PRV\PJWSTK\APBD\cwiczenia2_mp-s21461\zadanie_1\obj\Debug\net5.0\refint\zadani
 C:\PRV\PJWSTK\APBD\cwiczenia2_mp-s21461\zadanie_1\obj\Debug\net5.0\zadanie_1.pdb
 C:\PRV\PJWSTK\APBD\cwiczenia2_mp-s21461\zadanie_1\obj\Debug\net5.0\zadanie_1.genruntimeconfig.cache
 C:\PRV\PJWSTK\APBD\cwiczenia2_mp-s21461\zadanie_1\obj\Debug\net5.0\ref\zadanie_1.dll
+K:\APBD_ALL\Zadanie 2\zadanie_1\obj\Debug\net5.0\zadanie_1.csproj.AssemblyReference.cache
+K:\APBD_ALL\Zadanie 2\zadanie_1\obj\Debug\net5.0\zadanie_1.GeneratedMSBuildEditorConfig.editorconfig
+K:\APBD_ALL\Zadanie 2\zadanie_1\obj\Debug\net5.0\zadanie_1.AssemblyInfoInputs.cache
+K:\APBD_ALL\Zadanie 2\zadanie_1\obj\Debug\net5.0\zadanie_1.AssemblyInfo.cs
+K:\APBD_ALL\Zadanie 2\zadanie_1\obj\Debug\net5.0\zadanie_1.csproj.CoreCompileInputs.cache
+K:\APBD_ALL\Zadanie 2\zadanie_1\obj\Debug\net5.0\zadanie_1.dll
+K:\APBD_ALL\Zadanie 2\zadanie_1\obj\Debug\net5.0\refint\zadanie_1.dll
+K:\APBD_ALL\Zadanie 2\zadanie_1\obj\Debug\net5.0\zadanie_1.pdb
+K:\APBD_ALL\Zadanie 2\zadanie_1\bin\Debug\net5.0\zadanie_1.exe
+K:\APBD_ALL\Zadanie 2\zadanie_1\bin\Debug\net5.0\zadanie_1.deps.json
+K:\APBD_ALL\Zadanie 2\zadanie_1\bin\Debug\net5.0\zadanie_1.runtimeconfig.json
+K:\APBD_ALL\Zadanie 2\zadanie_1\bin\Debug\net5.0\zadanie_1.runtimeconfig.dev.json
+K:\APBD_ALL\Zadanie 2\zadanie_1\bin\Debug\net5.0\zadanie_1.dll
+K:\APBD_ALL\Zadanie 2\zadanie_1\bin\Debug\net5.0\zadanie_1.pdb
+K:\APBD_ALL\Zadanie 2\zadanie_1\bin\Debug\net5.0\Newtonsoft.Json.dll
+K:\APBD_ALL\Zadanie 2\zadanie_1\obj\Debug\net5.0\zadanie_1.csproj.CopyComplete
+K:\APBD_ALL\Zadanie 2\zadanie_1\obj\Debug\net5.0\zadanie_1.genruntimeconfig.cache
+K:\APBD_ALL\Zadanie 2\zadanie_1\obj\Debug\net5.0\ref\zadanie_1.dll

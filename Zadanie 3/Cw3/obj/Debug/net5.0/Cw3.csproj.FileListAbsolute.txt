@@ -22,3 +22,27 @@ C:\PRV\PJWSTK\APBD\cwiczenia3_mp-s21461\Cw3\obj\Debug\net5.0\Cw3.genruntimeconfi
 C:\PRV\PJWSTK\APBD\cwiczenia3_mp-s21461\Cw3\obj\Debug\net5.0\ref\Cw3.dll
 C:\PRV\PJWSTK\APBD\cwiczenia3_mp-s21461\Cw3\bin\Debug\net5.0\CsvHelper.dll
 C:\PRV\PJWSTK\APBD\cwiczenia3_mp-s21461\Cw3\obj\Debug\net5.0\Cw3.csproj.CopyComplete
+K:\APBD_ALL\Zadanie 3\Cw3\bin\Debug\net5.0\appsettings.Development.json
+K:\APBD_ALL\Zadanie 3\Cw3\bin\Debug\net5.0\appsettings.json
+K:\APBD_ALL\Zadanie 3\Cw3\bin\Debug\net5.0\Cw3.exe
+K:\APBD_ALL\Zadanie 3\Cw3\bin\Debug\net5.0\Cw3.deps.json
+K:\APBD_ALL\Zadanie 3\Cw3\bin\Debug\net5.0\Cw3.runtimeconfig.json
+K:\APBD_ALL\Zadanie 3\Cw3\bin\Debug\net5.0\Cw3.runtimeconfig.dev.json
+K:\APBD_ALL\Zadanie 3\Cw3\bin\Debug\net5.0\Cw3.dll
+K:\APBD_ALL\Zadanie 3\Cw3\bin\Debug\net5.0\Cw3.pdb
+K:\APBD_ALL\Zadanie 3\Cw3\bin\Debug\net5.0\CsvHelper.dll
+K:\APBD_ALL\Zadanie 3\Cw3\obj\Debug\net5.0\Cw3.csproj.AssemblyReference.cache
+K:\APBD_ALL\Zadanie 3\Cw3\obj\Debug\net5.0\Cw3.GeneratedMSBuildEditorConfig.editorconfig
+K:\APBD_ALL\Zadanie 3\Cw3\obj\Debug\net5.0\Cw3.AssemblyInfoInputs.cache
+K:\APBD_ALL\Zadanie 3\Cw3\obj\Debug\net5.0\Cw3.AssemblyInfo.cs
+K:\APBD_ALL\Zadanie 3\Cw3\obj\Debug\net5.0\Cw3.csproj.CoreCompileInputs.cache
+K:\APBD_ALL\Zadanie 3\Cw3\obj\Debug\net5.0\Cw3.MvcApplicationPartsAssemblyInfo.cache
+K:\APBD_ALL\Zadanie 3\Cw3\obj\Debug\net5.0\scopedcss\bundle\Cw3.styles.css
+K:\APBD_ALL\Zadanie 3\Cw3\obj\Debug\net5.0\staticwebassets\Cw3.StaticWebAssets.Manifest.cache
+K:\APBD_ALL\Zadanie 3\Cw3\obj\Debug\net5.0\Cw3.RazorTargetAssemblyInfo.cache
+K:\APBD_ALL\Zadanie 3\Cw3\obj\Debug\net5.0\Cw3.csproj.CopyComplete
+K:\APBD_ALL\Zadanie 3\Cw3\obj\Debug\net5.0\Cw3.dll
+K:\APBD_ALL\Zadanie 3\Cw3\obj\Debug\net5.0\refint\Cw3.dll
+K:\APBD_ALL\Zadanie 3\Cw3\obj\Debug\net5.0\Cw3.pdb
+K:\APBD_ALL\Zadanie 3\Cw3\obj\Debug\net5.0\Cw3.genruntimeconfig.cache
+K:\APBD_ALL\Zadanie 3\Cw3\obj\Debug\net5.0\ref\Cw3.dll

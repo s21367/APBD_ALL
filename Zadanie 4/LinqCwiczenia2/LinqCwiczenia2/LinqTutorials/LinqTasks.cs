@@ -1,7 +1,6 @@
 ﻿using LinqTutorials.Models;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
 namespace LinqTutorials
@@ -13,26 +12,26 @@ namespace LinqTutorials
 
         static LinqTasks()
         {
-            var empsCol = new List<Emp>();
-            var deptsCol = new List<Dept>();
+            List<Emp> empsCol = new();
+            List<Dept> deptsCol = new();
 
             #region Load depts
 
-            var d1 = new Dept
+            Dept d1 = new()
             {
                 Deptno = 1,
                 Dname = "Research",
                 Loc = "Warsaw"
             };
 
-            var d2 = new Dept
+            Dept d2 = new()
             {
                 Deptno = 2,
                 Dname = "Human Resources",
                 Loc = "New York"
             };
 
-            var d3 = new Dept
+            Dept d3 = new()
             {
                 Deptno = 3,
                 Dname = "IT",
@@ -48,7 +47,7 @@ namespace LinqTutorials
 
             #region Load emps
 
-            var e1 = new Emp
+            Emp e1 = new()
             {
                 Deptno = 1,
                 Empno = 1,
@@ -59,7 +58,7 @@ namespace LinqTutorials
                 Salary = 2000
             };
 
-            var e2 = new Emp
+            Emp e2 = new()
             {
                 Deptno = 1,
                 Empno = 20,
@@ -70,7 +69,7 @@ namespace LinqTutorials
                 Salary = 4000
             };
 
-            var e3 = new Emp
+            Emp e3 = new()
             {
                 Deptno = 1,
                 Empno = 2,
@@ -81,7 +80,7 @@ namespace LinqTutorials
                 Salary = 5000
             };
 
-            var e4 = new Emp
+            Emp e4 = new()
             {
                 Deptno = 2,
                 Empno = 3,
@@ -92,7 +91,7 @@ namespace LinqTutorials
                 Salary = 5500
             };
 
-            var e5 = new Emp
+            Emp e5 = new()
             {
                 Deptno = 2,
                 Empno = 4,
@@ -103,7 +102,7 @@ namespace LinqTutorials
                 Salary = 5500
             };
 
-            var e6 = new Emp
+            Emp e6 = new()
             {
                 Deptno = 2,
                 Empno = 5,
@@ -114,7 +113,7 @@ namespace LinqTutorials
                 Salary = 8000
             };
 
-            var e7 = new Emp
+            Emp e7 = new()
             {
                 Deptno = null,
                 Empno = 6,
@@ -125,7 +124,7 @@ namespace LinqTutorials
                 Salary = 7500
             };
 
-            var e8 = new Emp
+            Emp e8 = new()
             {
                 Deptno = 2,
                 Empno = 7,
@@ -136,7 +135,7 @@ namespace LinqTutorials
                 Salary = 4000
             };
 
-            var e9 = new Emp
+            Emp e9 = new()
             {
                 Deptno = 2,
                 Empno = 8,
@@ -147,7 +146,7 @@ namespace LinqTutorials
                 Salary = 12000
             };
 
-            var e10 = new Emp
+            Emp e10 = new()
             {
                 Deptno = 2,
                 Empno = 9,
@@ -173,7 +172,7 @@ namespace LinqTutorials
             #endregion
         }
 
-       
+
         public static IEnumerable<Emp> Task1()
         {
             IEnumerable<Emp> query = from e in Emps
@@ -183,7 +182,7 @@ namespace LinqTutorials
 
         }
 
-        
+
         public static IEnumerable<Emp> Task2()
         {
             IEnumerable<Emp> query = from e in Emps
@@ -194,14 +193,14 @@ namespace LinqTutorials
         }
 
 
-        
+
         public static int Task3()
         {
             int res = Emps.Max(s => s.Salary);
             return res;
         }
 
-        
+
         public static IEnumerable<Emp> Task4()
         {
             IEnumerable<Emp> query = from e in Emps
@@ -211,7 +210,7 @@ namespace LinqTutorials
             return query;
         }
 
-        
+
         public static IEnumerable<object> Task5()
         {
             IEnumerable<object> query = from e in Emps
@@ -219,7 +218,7 @@ namespace LinqTutorials
             return query;
         }
 
-       
+
         public static IEnumerable<object> Task6()
         {
             var query = from e in Emps
@@ -240,7 +239,7 @@ namespace LinqTutorials
             return methodSyntax;
         }
 
-       
+
         public static IEnumerable<object> Task7()
         {
             var query = from e in Emps
@@ -250,29 +249,29 @@ namespace LinqTutorials
             return query;
         }
 
-        
+
         public static bool Task8()
         {
-            var numberOfBackendProgrammers = Emps.Count(s => s.Job == "Backend programmer");
+            int numberOfBackendProgrammers = Emps.Count(s => s.Job == "Backend programmer");
 
             return numberOfBackendProgrammers > 0 ? true : false;
         }
 
-        
+
         public static Emp Task9()
         {
-            var query = from e in Emps
-                        where e.Job == "Frontend programmer"
-                        orderby  e.HireDate descending
-                        select e;
+            IOrderedEnumerable<Emp> query = from e in Emps
+                                            where e.Job == "Frontend programmer"
+                                            orderby e.HireDate descending
+                                            select e;
             return query.First();
         }
 
-        
+
         public static IEnumerable<object> Task10()
         {
             var query = from e in Emps
-                        select new {e.Ename, e.Job, e.HireDate };
+                        select new { e.Ename, e.Job, e.HireDate };
             IEnumerable<Emp> tempQuery = new List<Emp> {new Emp{
                 Deptno = 1,
                 Empno = 1,
@@ -283,16 +282,13 @@ namespace LinqTutorials
                 Salary = 2000
             } };
             var query2 = from e in tempQuery
-                        select new { e.Ename, e.Job, e.HireDate };
+                         select new { e.Ename, e.Job, e.HireDate };
             return query.Distinct().Union(query2.Distinct());
 
 
 
         }
 
-  
-
-        
         public static IEnumerable<object> Task11()
         {
             var result = Emps
@@ -305,15 +301,13 @@ namespace LinqTutorials
             return result;
         }
 
-       
+
         public static IEnumerable<Emp> Task12()
         {
-            IEnumerable<Emp> query = Emps.GetEmpsWithSubordinates().ToList();
-
-            return query;
+            return Emps.GetEmpsWithSubordinates().ToList();
         }
 
-       
+
         public static int Task13(int[] arr)
         {
             int res = arr.ToList()
@@ -325,7 +319,7 @@ namespace LinqTutorials
             return res;
         }
 
-        
+
         public static IEnumerable<Dept> Task14()
         {
             IEnumerable<Dept> query = Depts.GroupJoin(Emps, d => d.Deptno, e => e.Deptno, (d, e) => new
@@ -340,11 +334,14 @@ namespace LinqTutorials
 
     public static class CustomExtensionMethods
     {
-       
         public static IEnumerable<Emp> GetEmpsWithSubordinates(this IEnumerable<Emp> emps)
         {
-            var result = emps.Where(e => emps.Any(e2 => e2.Mgr != null)).OrderBy(e => e.Ename).ThenByDescending(e => e.Salary);
-            return result;
+            return emps
+                .Where(e => e.Mgr != null)
+                .Select(e => e.Mgr)
+                .Distinct()
+                .OrderBy(e => e.Ename)
+                .ThenByDescending(e => e.Salary);
         }
 
     }

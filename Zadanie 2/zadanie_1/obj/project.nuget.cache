@@ -1,14 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "bzuGvP4VoZ4ECUldhfGoJ4bji1xAsezxWtnsBaBzAQfNzf02cTbc4CdaH2rJwyoVi4Bm0K9i3Ow1kyMpeS5DiA==",
+  "dgSpecHash": "qZqQk8TYtKlCX3eyaJ2j+tvtSAXbSXpNMH2nZwSzX3nUlecREBg0QGCW56GQ6z5lsgYPK7AgNHxBZZ//64tLdA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\szyma\\Desktop\\APBD\\Zadanie 2\\zadanie_1\\zadanie_1.csproj",
+  "projectFilePath": "K:\\APBD_ALL\\Zadanie 2\\zadanie_1\\zadanie_1.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\szyma\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\szyma\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512",
-    "C:\\Users\\szyma\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\szyma\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\szyma\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\makyo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

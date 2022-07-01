@@ -45,24 +45,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\patkep\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\makyo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\PRV\\PJWSTK\\APBD\\cwiczenia3_mp-s21461\\Cw3\\Cw3.csproj",
+      "projectUniqueName": "K:\\APBD_ALL\\Zadanie 3\\Cw3\\Cw3.csproj",
       "projectName": "Cw3",
-      "projectPath": "C:\\PRV\\PJWSTK\\APBD\\cwiczenia3_mp-s21461\\Cw3\\Cw3.csproj",
-      "packagesPath": "C:\\Users\\patkep\\.nuget\\packages\\",
-      "outputPath": "C:\\PRV\\PJWSTK\\APBD\\cwiczenia3_mp-s21461\\Cw3\\obj\\",
+      "projectPath": "K:\\APBD_ALL\\Zadanie 3\\Cw3\\Cw3.csproj",
+      "packagesPath": "C:\\Users\\makyo\\.nuget\\packages\\",
+      "outputPath": "K:\\APBD_ALL\\Zadanie 3\\Cw3\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\patkep\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\makyo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -111,7 +106,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

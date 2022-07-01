@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C8kSnltQK1YswMdy8oSu9JOY8eZKjA1QzsCS5WZOoksDKmZvXQL9bWL0yRymlEgf+WIa+voXpO0lp4hM+U1isw==",
+  "dgSpecHash": "i+zynyiiHHI7ObLVd8bWnFU5sPZA+h8mnyzVn2j95nGhaEk9qqMYGM9M508CCmSBMTa4v7NcVDco7GCVKKTOvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\szyma\\Desktop\\APBD\\Zadanie 2\\zadanie_2\\LegacyAppConsumer\\LegacyAppConsumer.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\szyma\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512",
-    "C:\\Users\\szyma\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\szyma\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\szyma\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
-  ],
+  "projectFilePath": "K:\\APBD_ALL\\Zadanie 2\\zadanie_2\\LegacyAppConsumer\\LegacyAppConsumer.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

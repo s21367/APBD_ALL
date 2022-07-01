@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using efDataBase.Models;
+﻿using efDataBase.Models.DTO;
 using efDataBase.Services;
-using efDataBase.Models.DTO;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace efDataBase.Controllers
 {
@@ -15,10 +9,10 @@ namespace efDataBase.Controllers
     [ApiController]
     public class PrescriptionController : Controller
     {
-        
+
         private readonly IDbPrescriptionService _dbService;
 
-       
+
         public PrescriptionController(IDbPrescriptionService dbService)
         {
             _dbService = dbService;
@@ -28,11 +22,11 @@ namespace efDataBase.Controllers
         [Route("{idPrescription}")]
         public async Task<IActionResult> GetPrescription([FromRoute] int idPrescription)
         {
-            var doctors = await _dbService.GetPrescription(idPrescription);
+            SomeSortOfPrescription doctors = await _dbService.GetPrescription(idPrescription);
             return Ok(doctors);
         }
 
-        
+
 
     }
 }

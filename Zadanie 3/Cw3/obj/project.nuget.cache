@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "07O8FY2LRh7ScZbZBAnK8A1mmmAwQeMnMiNu+1p6SWt28/s7NRJwh3TdfWwUMB/egsJkBWIx7j64zfWBxSHBqA==",
+  "dgSpecHash": "O/fxuAKuJbiDID1RbhEfb2g7olWoot/PvkqKSUGGWi49cPbm7pguIoZpkGhEQPaO0g9qSflP/tbbH4mntJ+oPQ==",
   "success": true,
-  "projectFilePath": "C:\\PRV\\PJWSTK\\APBD\\cwiczenia3_mp-s21461\\Cw3\\Cw3.csproj",
+  "projectFilePath": "K:\\APBD_ALL\\Zadanie 3\\Cw3\\Cw3.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\patkep\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512"
+    "C:\\Users\\makyo\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512"
   ],
   "logs": []
 }

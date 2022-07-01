@@ -1,9 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json.Linq;
 
 namespace mp
 {
@@ -27,8 +23,10 @@ namespace mp
             this.email = data[6];
             this.mothersName = data[7];
             this.fathersName = data[8];
-            this.studies = new List<KierunekStudia>();
-            this.studies.Add(new KierunekStudia(data[2], data[3]));
+            this.studies = new List<KierunekStudia>
+            {
+                new KierunekStudia(data[2], data[3])
+            };
 
         }
 
@@ -49,9 +47,11 @@ namespace mp
         }
         public JArray studiesToJson()
         {
-            JArray jArray = new JArray();  
-            for(int i = 0; i < this.studies.Count; i++)
+            JArray jArray = new();
+            for (int i = 0; i < this.studies.Count; i++)
+            {
                 jArray.Add(this.studies[i].toJson());
+            }
 
             return jArray;
         }

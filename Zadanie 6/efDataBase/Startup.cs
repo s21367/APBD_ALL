@@ -1,16 +1,10 @@
 using efDataBase.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace efDataBase
 {
@@ -26,9 +20,11 @@ namespace efDataBase
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<Models.s21367Context>(options => options.UseSqlServer(Configuration.GetConnectionString("Default")));
-            services.AddScoped<IDbService, DbService>();
-            services.AddScoped<IDbPrescriptionService, DbPrescriptionService>();
+            _ = services.AddDbContext<Models.s21367Context>(options => 
+            options.UseSqlServer(Configuration.GetConnectionString("Default")));
+            _ = services.AddScoped<IDbService, DbService>();
+            _ = services.AddScoped<IDbPrescriptionService, DbPrescriptionService>();
+            
             services.AddControllers();
         }
 
@@ -39,6 +35,8 @@ namespace efDataBase
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseHttpsRedirection();
 
             app.UseRouting();
 

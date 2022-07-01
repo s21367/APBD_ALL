@@ -1,9 +1,4 @@
 ﻿using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace mp
 {
@@ -21,7 +16,7 @@ namespace mp
         internal JToken toJson()
         {
             return new JObject(
-                new JProperty("name", name),    
+                new JProperty("name", name),
                 new JProperty("mode", mode)
                 );
         }

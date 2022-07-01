@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VPsrZ2YSpklFEs0rLO1tvCSHLw8gnaqLAJmXRi44QjiTCpPUZ9PtObrwoHp0Z9w/Zih/KCkI3pKgRql6rCMgxg==",
+  "dgSpecHash": "/T736FtzkzklqNA2+R4JD8iWVX7MDO5TIL/EN4buPTNZmpKW1/itHnWKEy5e1Dxhgevd660XO+qB4LmUd4xBgQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\szyma\\Desktop\\APBD\\Zadanie 4\\LinqCwiczenia2\\LinqCwiczenia2\\LinqTutorials\\LinqTutorials.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\szyma\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512",
-    "C:\\Users\\szyma\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\szyma\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\szyma\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
-  ],
+  "projectFilePath": "K:\\APBD_ALL\\Zadanie 4\\LinqCwiczenia2\\LinqCwiczenia2\\LinqTutorials\\LinqTutorials.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
